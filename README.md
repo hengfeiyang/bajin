@@ -32,4 +32,4 @@ website/
 
 ## 许可
 
-© 2025 八金. All rights reserved.
+© 2026 八金. All rights reserved.
