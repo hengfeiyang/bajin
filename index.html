@@ -1,248 +1,429 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="八金 - AI预算管家，智能分析每笔支出，实时预警超支风险，帮你守住钱包。月订阅仅需¥1，年订阅¥6">
-    <meta name="keywords" content="预算管理,AI预算,预算助手,消费控制,省钱,理财,财务规划,智能记账,开支管理,月光族">
-    <meta name="author" content="Bajin">
-    <title>八金 - AI预算管家 | 智能预算·告别超支</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>八金 - AI预算管家 | 智能预算·告别超支</title>
+  <meta name="description" content="八金是 AI 驱动的 iOS 预算管家，支持自然语言记账、预算预警、消费分析和本地数据保护。" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet" />
+  <script src="site.js"></script>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-    <header>
-        <nav class="container">
-            <div class="logo">
-                <img src="logo.png" alt="八金" class="logo-img">
-                <span>八金</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">首页</a></li>
-                <li><a href="index.html#features">功能特色</a></li>
-                <li><a href="privacy.html">隐私政策</a></li>
-                <li><a href="support.html">支持</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="home-page">
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container hero-content">
-                <img src="logo.png" alt="八金" class="hero-logo">
-                <h1>八金 - AI预算管家</h1>
-                <p class="hero-subtitle">智能预算·告别超支</p>
-                <p style="font-size: 1.1rem; margin: 1rem 0; opacity: 0.95;">不只是记账 App，更是你的 AI 预算管家<br>智能分析消费习惯，提前预警超支风险</p>
-                <div style="background: rgba(255,255,255,0.15); padding: 1rem; border-radius: 12px; margin: 1.5rem 0; backdrop-filter: blur(10px);">
-                    <p style="font-size: 0.95rem; margin: 0;">🎁 月订阅 ¥1 · 年订阅 ¥6</p>
-                </div>
-                <div class="cta-buttons">
-                    <a href="#" class="btn btn-primary">在 App Store 下载</a>
-                    <a href="#features" class="btn btn-secondary">了解更多</a>
-                </div>
-            </div>
-        </section>
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-mark"><img src="logo.png" alt="八金" /></div>
+      八金
+    </a>
+    <ul class="nav-links">
+      <li><a href="#features">功能</a></li>
+      <li><a href="#pricing">价格</a></li>
+      <li><a href="#why">为什么选我们</a></li>
+      <li><a href="support.html">支持</a></li>
+      <li><a href="#download" class="nav-cta">下载 App</a></li>
+    </ul>
+    <button id="theme-toggle-btn" class="theme-toggle" type="button" title="切换深色/浅色模式">☀</button>
+  </nav>
 
-        <!-- Problem Section -->
-        <section class="problem-section">
-            <div class="container">
-                <h2>🎯 你是否经常遇到这些问题？</h2>
-                <div class="problem-grid">
-                    <div class="problem-item">💸 月底发现钱不知道花哪了</div>
-                    <div class="problem-item">📉 想存钱但总是控制不住</div>
-                    <div class="problem-item">😰 经常超支，压力山大</div>
-                    <div class="problem-item">🤔 不知道哪些开支可以优化</div>
-                    <div class="problem-item">📱 记账太麻烦，懒得坚持</div>
-                    <div class="problem-item">🔍 看不清消费习惯和趋势</div>
-                </div>
-                <p style="text-align: center; font-size: 1.2rem; margin-top: 2rem; font-weight: 600; color: var(--primary-color);">八金用 AI 帮你解决这些问题！</p>
-            </div>
-        </section>
-
-        <!-- Features Section -->
-        <section id="features" class="features">
-            <div class="container">
-                <h2>✨ 核心功能</h2>
-
-                <div class="feature-highlight">
-                    <h3>AI预算管家（高级功能）</h3>
-                    <ul class="feature-list">
-                        <li>自然语言记账："今天午饭花了50块" → AI 自动分类入账</li>
-                        <li>智能消费分析："这个月我喝了多少咖啡" → AI 智能分析，提供优化建议</li>
-                        <li>预算实时监控：剩余额度一目了然，年度结余心中有数</li>
-                        <li>超支预警：花太快时及时提醒，避免月光</li>
-                        <li style="color: var(--success-color); font-weight: 600;">月订阅仅需 ¥1，年订阅 ¥6</li>
-                    </ul>
-                </div>
-
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">💰</div>
-                        <h3>多维度预算管理</h3>
-                        <p>按账本设置预算，按类别控制开支，灵活的预算周期，支持预算结转</p>
-                        <p style="color: var(--success-color); font-size: 0.9rem; margin-top: 0.5rem;">基础预算功能完全免费</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">📊</div>
-                        <h3>智能数据洞察</h3>
-                        <p>AI 消费分析报告，预算执行率追踪，月度/年度趋势对比，省钱目标达成率</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🎨</div>
-                        <h3>极简优雅设计</h3>
-                        <p>预算仪表盘，直观的进度环，多账本快速切换，深色模式支持</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🔒</div>
-                        <h3>隐私与安全</h3>
-                        <p>数据本地存储不上传，完整备份恢复，零个人信息收集</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">📈</div>
-                        <h3>趋势预测分析</h3>
-                        <p>基于历史数据的消费趋势预测，AI 智能识别异常支出，提前规划未来开支，帮你更好理财</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🔔</div>
-                        <h3>智能提醒通知</h3>
-                        <p>预算即将超支提醒，月度结算自动通知，重要支出实时推送，从不错过关键信息</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Pricing Section -->
-        <section class="pricing-section">
-            <div class="container">
-                <h2>💎 订阅计划</h2>
-                <div class="pricing-grid">
-                    <div class="pricing-card">
-                        <h3>免费版</h3>
-                        <div class="price">¥0</div>
-                        <ul class="pricing-features">
-                            <li>✓ 基础记账功能</li>
-                            <li>✓ 预算设置</li>
-                            <li>✓ 统计分析</li>
-                            <li>✓ 数据备份</li>
-                            <li>✓ 永久免费</li>
-                        </ul>
-                    </div>
-                    <div class="pricing-card featured">
-                        <div class="badge">推荐</div>
-                        <h3>高级版</h3>
-                        <div class="price">¥1<span>/月</span></div>
-                        <p style="color: var(--success-color); font-weight: 600; margin: 0.5rem 0;">🎁 月度 7 天免费试用，年度首月免费</p>
-                        <ul class="pricing-features">
-                            <li>✓ 免费版所有功能</li>
-                            <li>✓ AI 智能记账</li>
-                            <li>✓ AI 消费分析</li>
-                            <li>✓ 智能超支预警</li>
-                        </ul>
-                        <p style="font-size: 0.9rem; color: #6C6C70; margin-top: 1rem;">年订阅 ¥6/年（节省 50%）</p>
-                    </div>
-                </div>
-                <p style="text-align: center; color: #6C6C70; font-size: 0.9rem; margin-top: 2rem;">可在 iOS 设置中随时管理或取消订阅</p>
-            </div>
-        </section>
-
-        <!-- Why Section -->
-        <section id="about" class="about">
-            <div class="container">
-                <h2>💡 为什么选择八金？</h2>
-                <div class="about-content">
-                    <div class="about-features">
-                        <div class="about-item">
-                            <strong>✓ 专注预算管理</strong>
-                            <p>不只记录，更要控制。AI 提前预警超支风险</p>
-                        </div>
-                        <div class="about-item">
-                            <strong>✓ AI 驱动智能</strong>
-                            <p>自然语言记账，1 秒完成。智能分析省钱更轻松</p>
-                        </div>
-                        <div class="about-item">
-                            <strong>✓ 隐私优先</strong>
-                            <p>数据本地存储，绝不上传。安全可靠可备份恢复</p>
-                        </div>
-                        <div class="about-item">
-                            <strong>✓ 无广告纯净</strong>
-                            <p>专注理财体验，没有任何广告打扰</p>
-                        </div>
-                        <div class="about-item">
-                            <strong>✓ 原生性能</strong>
-                            <p>100% Swift 开发，流畅快速，省电高效</p>
-                        </div>
-                        <div class="about-item">
-                            <strong>✓ 持续更新</strong>
-                            <p>不断优化功能，越用越好</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Target Audience Section -->
-        <section class="target-section">
-            <div class="container">
-                <h2>🎯 适合谁用？</h2>
-                <div class="target-grid">
-                    <div class="target-item">
-                        <div class="target-icon">💸</div>
-                        <p>想存钱但总是月光的你</p>
-                    </div>
-                    <div class="target-item">
-                        <div class="target-icon">📊</div>
-                        <p>希望控制开支的理性消费者</p>
-                    </div>
-                    <div class="target-item">
-                        <div class="target-icon">📝</div>
-                        <p>需要分类管理预算的细致规划者</p>
-                    </div>
-                    <div class="target-item">
-                        <div class="target-icon">🌱</div>
-                        <p>想养成良好消费习惯的年轻人</p>
-                    </div>
-                    <div class="target-item">
-                        <div class="target-icon">👨‍👩‍👧‍👦</div>
-                        <p>需要家庭财务管理的主理人</p>
-                    </div>
-                    <div class="target-item">
-                        <div class="target-icon">💼</div>
-                        <p>追求高效记账的职场人士</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Requirements Section -->
-        <section class="requirements">
-            <div class="container">
-                <h2>系统要求</h2>
-                <ul class="requirements-list">
-                    <li>iOS 18.0 或更高版本</li>
-                    <li>iPhone、iPad 和 iPod touch 兼容</li>
-                    <li>需要约 20 MB 可用空间</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section class="contact">
-            <div class="container">
-                <h2>联系我们</h2>
-                <p>如有任何问题或建议，欢迎联系我们</p>
-                <div class="contact-links">
-                    <a href="support.html" class="btn btn-secondary">获取支持</a>
-                    <a href="privacy.html" class="btn btn-secondary">隐私政策</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 八金. 保留所有权利.</p>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-mesh"></div>
+    <div class="section-inner hero-inner">
+      <div class="hero-split">
+        <div class="hero-content hero-content-left">
+          <div class="hero-badge">
+            <div class="hero-badge-dot"></div>
+            AI 驱动 · 专注预算管理 · iOS 原生
+          </div>
+          <h1 class="hero-title hero-title-large">
+            告别月光，<br>
+            <span class="grad">AI 替你把钱<br class="mobile-only">管好</span>
+          </h1>
+          <p class="hero-sub">
+            八金不只是记账 App，更是你的 AI 预算管家。智能分析消费习惯，提前预警超支风险，帮你真正存到钱。
+          </p>
+          <div class="hero-actions hero-actions-left">
+            <a href="#download" class="btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v5"/><polyline points="16 3 16 7 12 7"/><path d="M16 19l2 2 4-4"/></svg>
+              在 App Store 下载
+            </a>
+            <a href="#features" class="btn-ghost">
+              了解功能
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+          <p class="hero-price-note hero-price-left">月订阅 <strong>¥1</strong> 起 · 7 天免费试用 · 随时取消</p>
         </div>
-    </footer>
+
+        <!-- Phone Mockup -->
+        <div class="hero-mockup-wrap hero-mockup-flush">
+
+          <div class="phone-frame">
+            <!-- Dynamic Island -->
+            <div class="dynamic-island"></div>
+            <div class="phone-inner">
+              <div id="app-screen" class="app-screen">
+
+                <!-- Status bar -->
+                <div class="mock-status">
+                  <span data-time class="mock-time">23:08</span>
+                  <div class="mock-status-icons">
+                    <svg width="14" height="10" viewBox="0 0 14 10" fill="none"><rect x="0" y="3" width="3" height="7" rx="1" fill="#111" data-si/><rect x="4" y="2" width="3" height="8" rx="1" fill="#111" data-si/><rect x="8" y="0" width="3" height="10" rx="1" fill="#111" data-si/><rect x="12" y="0" width="2" height="10" rx="1" fill="#ddd"/></svg>
+                    <svg width="13" height="10" viewBox="0 0 13 10"><path d="M6.5 2C4.2 2 2.2 3 0.8 4.6L2.2 6c1-1.2 2.6-1.9 4.3-1.9s3.3.7 4.3 1.9l1.4-1.4C10.8 3 8.8 2 6.5 2z" fill="#111" data-si/><path d="M6.5 5c-1.3 0-2.5.5-3.4 1.4l1.4 1.4c.5-.5 1.2-.8 2-.8s1.5.3 2 .8L9.9 6.4C9 5.5 7.8 5 6.5 5z" fill="#111" data-si/><circle cx="6.5" cy="9" r="1" fill="#111" data-si/></svg>
+                    <div class="mock-battery"><div class="mock-battery-shell"><div class="mock-battery-level"></div></div></div>
+                  </div>
+                </div>
+
+                <!-- App header -->
+                <div data-header class="mock-app-header">
+                  <div data-menu class="mock-circle mock-menu">☰</div>
+                  <span data-title class="mock-title">八金</span>
+                  <div data-plus class="mock-circle mock-plus">+</div>
+                </div>
+
+                <!-- Content -->
+                <div class="mock-content">
+
+                  <!-- Total budget card -->
+                  <div data-card class="mock-card padded">
+                    <div data-text-muted class="mock-muted">预算总计</div>
+                    <div class="mock-total-row">
+                      <span data-text class="mock-total">¥2,710.28</span>
+                      <span data-text-sub class="mock-budget">¥4000</span>
+                    </div>
+                    <div class="mock-label-row">
+                      <span data-text-alt class="mock-small">已花费</span>
+                      <span data-text-alt class="mock-small">总预算</span>
+                    </div>
+                    <div data-bar-bg class="mock-bar"><div class="mock-fill w-68"></div>
+                    </div>
+                  </div>
+
+                  <!-- Category rows -->
+                  <div data-card class="mock-card clip">
+                    <div data-card-border class="mock-category">
+                      <div class="mock-category-head">
+                        <div data-icon-cat class="mock-icon food">🍽️</div>
+                        <span data-text class="mock-name">餐饮</span>
+                        <span data-text-alt class="mock-amount">¥832.14 / ¥1000</span>
+                      </div>
+                      <div data-bar-bg class="mock-thin-bar"><div class="mock-fill w-83"></div></div>
+                    </div>
+                    <div data-card-border class="mock-category">
+                      <div class="mock-category-head">
+                        <div data-icon-cat class="mock-icon daily">🛒</div>
+                        <span data-text class="mock-name">日用</span>
+                        <span data-text-alt class="mock-amount">¥648.71 / ¥1000</span>
+                      </div>
+                      <div data-bar-bg class="mock-thin-bar"><div class="mock-fill w-65"></div></div>
+                    </div>
+                    <div data-card-border class="mock-category">
+                      <div class="mock-category-head">
+                        <div data-icon-cat class="mock-icon transport">🚗</div>
+                        <span data-text class="mock-name">交通</span>
+                        <span data-text-alt class="mock-amount">¥451.25 / ¥1000</span>
+                      </div>
+                      <div data-bar-bg class="mock-thin-bar"><div class="mock-fill w-45"></div></div>
+                    </div>
+                    <div class="mock-category">
+                      <div class="mock-category-head">
+                        <div data-icon-cat class="mock-icon long">💸</div>
+                        <span data-text class="mock-name">长期</span>
+                        <span data-text-alt class="mock-amount">¥880.32 / ¥1000</span>
+                      </div>
+                      <div data-bar-bg class="mock-thin-bar"><div class="mock-fill w-88"></div></div>
+                    </div>
+                  </div>
+
+                  <!-- 结余 card -->
+                  <div data-card class="mock-card compact">
+                    <div class="mock-balance-row">
+                      <div data-icon-balance class="mock-icon balance">💰</div>
+                      <div class="mock-flex">
+                        <div data-text class="mock-name">结余</div>
+                        <div class="mock-health">✓ 预算健康</div>
+                      </div>
+                      <span data-text-alt class="mock-amount">余额：¥1,289.72</span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- AI input bar -->
+                <div class="mock-input-wrap">
+                  <div data-input class="mock-input">
+                    <span class="mock-star">✦</span>
+                    <span data-input-text class="mock-placeholder">记账、消费建议、消费总结...</span>
+                    <div data-send class="mock-send">
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 8V2M5 2L2 5M5 2L8 5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- Glow reflection below phone -->
+          <div class="phone-glow"></div>
+        </div><!-- /hero-mockup-wrap -->
+      </div><!-- /hero-split -->
+    </div>
+  </section>
+
+  <div class="gradient-line"></div>
+
+  <!-- PROBLEMS -->
+  <section class="problems" id="problems">
+    <div class="section-inner">
+      <div class="section-label reveal">你是否也有这些烦恼？</div>
+      <h2 class="section-title reveal reveal-delay-1">理财难，<br>难在没有清醒的认知</h2>
+      <div class="problems-grid reveal reveal-delay-2">
+        <div class="problem-cell">
+          <div class="problem-icon">💸</div>
+          <div class="problem-title">月底钱不知去哪了</div>
+          <div class="problem-desc">每次月底都觉得钱不够用，却说不清楚到底花在了哪里。</div>
+        </div>
+        <div class="problem-cell">
+          <div class="problem-icon">📉</div>
+          <div class="problem-title">存钱计划屡屡落空</div>
+          <div class="problem-desc">想存钱，但总是到月末才发现存款依然是零，意志力不够用。</div>
+        </div>
+        <div class="problem-cell">
+          <div class="problem-icon">😰</div>
+          <div class="problem-title">超支焦虑压力山大</div>
+          <div class="problem-desc">经常突破预算，明知道超支了却没有任何预警，只能事后后悔。</div>
+        </div>
+        <div class="problem-cell">
+          <div class="problem-icon">📱</div>
+          <div class="problem-title">记账太麻烦，懒得坚持</div>
+          <div class="problem-desc">下载过很多记账 App，但繁琐的操作让人三天打鱼两天晒网。</div>
+        </div>
+        <div class="problem-cell">
+          <div class="problem-icon">🔍</div>
+          <div class="problem-title">看不清消费规律</div>
+          <div class="problem-desc">有数据却没洞察，不知道哪些支出是可以优化的"隐形漏洞"。</div>
+        </div>
+        <div class="problem-cell">
+          <div class="problem-icon">🤔</div>
+          <div class="problem-title">不知道从哪里开始</div>
+          <div class="problem-desc">想理财，但面对复杂的财务知识，不知道从何着手改变现状。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="section-inner">
+      <div class="features-header">
+        <div>
+          <div class="section-label reveal">核心功能</div>
+          <h2 class="section-title reveal reveal-delay-1">一个 App，<br>解决全部问题</h2>
+        </div>
+        <p class="section-sub reveal reveal-delay-2">从 AI 智能记账到消费洞察，八金为你的每一分钱提供清晰的视图和主动的保护。</p>
+      </div>
+
+      <div class="feature-cards">
+
+        <!-- AI 记账 — wide -->
+        <div class="feature-card wide reveal">
+          <div class="feature-icon-wrap purple">✦</div>
+          <h3 class="feature-card-title">AI 预算管家</h3>
+          <p class="feature-card-desc">用自然语言记账，"今天午饭花了 50 块"一句话搞定。AI 自动分类，智能分析消费模式，实时监控剩余额度，超支前主动提醒。</p>
+          <span class="feature-tag">高级功能</span>
+          <!-- Chat demo -->
+          <div class="ai-demo">
+            <div class="chat-bubble chat-user">今天喝了两杯咖啡，花了 68 块</div>
+            <div class="chat-bubble chat-ai">✓ 已记录：咖啡 ¥68，归入「餐饮」。<br><strong>本月咖啡支出 ¥312</strong>，占餐饮预算 28%，稍高于上月同期。</div>
+            <div class="chat-bubble chat-user">这个月我咖啡喝了多少钱？</div>
+            <div class="chat-bubble chat-ai">5月咖啡支出共 <strong>¥312</strong>（14 次），较上月增加 ¥89。如果每周少喝 2 次，可节省约 ¥120/月。</div>
+          </div>
+        </div>
+
+        <!-- 多维预算 -->
+        <div class="feature-card reveal reveal-delay-1">
+          <div class="feature-icon-wrap green">📊</div>
+          <h3 class="feature-card-title">多维度预算管理</h3>
+          <p class="feature-card-desc">按账本设置预算，按类别控制开支，灵活的预算周期，支持预算结转。基础预算功能完全免费。</p>
+        </div>
+
+        <!-- 数据洞察 -->
+        <div class="feature-card reveal reveal-delay-2">
+          <div class="feature-icon-wrap purple">📈</div>
+          <h3 class="feature-card-title">智能数据洞察</h3>
+          <p class="feature-card-desc">AI 消费分析报告，预算执行率追踪，月度/年度趋势对比，省钱目标达成率一目了然。</p>
+        </div>
+
+        <!-- 隐私 -->
+        <div class="feature-card reveal reveal-delay-1">
+          <div class="feature-icon-wrap green">🔒</div>
+          <h3 class="feature-card-title">隐私优先</h3>
+          <p class="feature-card-desc">数据本地存储，完整备份恢复，零个人信息收集。你的财务数据，永远只属于你。</p>
+        </div>
+
+        <!-- 原生性能 -->
+        <div class="feature-card reveal reveal-delay-2">
+          <div class="feature-icon-wrap pink">⚡</div>
+          <h3 class="feature-card-title">极致原生体验</h3>
+          <p class="feature-card-desc">100% Swift 开发，深色模式支持，直观的预算仪表盘，省电高效，无任何广告。</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="section-inner">
+      <div class="pricing-header">
+        <div class="section-label reveal">订阅计划</div>
+        <h2 class="section-title reveal reveal-delay-1">简单透明的定价</h2>
+        <p class="section-sub reveal reveal-delay-2">不玩花样，两个方案，选适合你的。</p>
+      </div>
+      <div class="pricing-cards">
+
+        <!-- Free -->
+        <div class="pricing-card reveal">
+          <div class="pricing-tier">免费版</div>
+          <div class="pricing-price">
+            <span class="pricing-currency">¥</span>
+            <span class="pricing-amount">0</span>
+          </div>
+          <div class="pricing-alt">永久免费，无需信用卡</div>
+          <div class="pricing-divider"></div>
+          <ul class="pricing-features-list">
+            <li><span class="check">✓</span> 基础记账功能</li>
+            <li><span class="check">✓</span> 预算设置与管理</li>
+            <li><span class="check">✓</span> 统计分析图表</li>
+            <li><span class="check">✓</span> 数据备份恢复</li>
+          </ul>
+          <a href="#download" class="btn-pricing-ghost">免费下载</a>
+        </div>
+
+        <!-- Premium -->
+        <div class="pricing-card featured reveal reveal-delay-1">
+          <div class="pricing-badge">推荐</div>
+          <div class="pricing-tier">高级版</div>
+          <div class="pricing-price">
+            <span class="pricing-currency">¥</span>
+            <span class="pricing-amount">1</span>
+            <span class="pricing-period">/月</span>
+          </div>
+          <div class="pricing-alt">年订阅 ¥6 · 节省 50% · 首月免费</div>
+          <div class="pricing-divider"></div>
+          <ul class="pricing-features-list">
+            <li><span class="check">✓</span> 免费版所有功能</li>
+            <li><span class="check">✓</span> AI 自然语言记账</li>
+            <li><span class="check">✓</span> AI 消费分析与建议</li>
+            <li><span class="check">✓</span> 智能超支预警</li>
+            <li><span class="check">✓</span> 趋势预测分析</li>
+          </ul>
+          <a href="#download" class="btn-pricing-primary">开始 7 天免费试用</a>
+        </div>
+
+      </div>
+      <p class="pricing-note reveal">可在 iOS 设置中随时管理或取消订阅。</p>
+    </div>
+  </section>
+
+  <!-- WHY BAJIN -->
+  <section class="why" id="why">
+    <div class="section-inner">
+      <div class="section-label reveal">为什么选择八金？</div>
+      <h2 class="section-title reveal reveal-delay-1">专注把一件事做到极致</h2>
+      <div class="why-grid">
+        <div class="why-item reveal">
+          <div class="why-num">01</div>
+          <div class="why-item-title">专注预算，不只记录</div>
+          <div class="why-item-desc">大多数记账 App 只是记录，八金更进一步：提前预警，主动干预，帮你真正控住开支。</div>
+        </div>
+        <div class="why-item reveal reveal-delay-1">
+          <div class="why-num">02</div>
+          <div class="why-item-title">AI 驱动，1 秒记账</div>
+          <div class="why-item-desc">自然语言输入，AI 自动分类。记账从来不是负担，而是轻松的日常习惯。</div>
+        </div>
+        <div class="why-item reveal reveal-delay-2">
+          <div class="why-num">03</div>
+          <div class="why-item-title">隐私第一，数据属于你</div>
+          <div class="why-item-desc">数据本地存储，绝不上传云端。你的收支信息，永远不会成为任何人的商品。</div>
+        </div>
+        <div class="why-item reveal reveal-delay-1">
+          <div class="why-num">04</div>
+          <div class="why-item-title">无广告，纯净体验</div>
+          <div class="why-item-desc">没有任何广告骚扰，没有诱导性推送，专注于帮你管好钱这一件事。</div>
+        </div>
+        <div class="why-item reveal reveal-delay-2">
+          <div class="why-num">05</div>
+          <div class="why-item-title">原生 Swift，极致性能</div>
+          <div class="why-item-desc">100% Swift 原生开发，流畅快速，省电高效，深度适配 iOS 系统特性。</div>
+        </div>
+        <div class="why-item reveal reveal-delay-3">
+          <div class="why-num">06</div>
+          <div class="why-item-title">持续进化，越用越好</div>
+          <div class="why-item-desc">定期更新迭代，积极响应用户反馈，我们和你一起把八金做得更好。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUDIENCE -->
+  <section class="audience">
+    <div class="section-inner">
+      <div class="section-label reveal">适合谁用？</div>
+      <h2 class="section-title reveal reveal-delay-1">为每一种认真对待<br>生活的人设计</h2>
+      <div class="audience-pills">
+        <div class="audience-pill reveal"><span class="pill-emoji">💸</span><span class="pill-text">想存钱但总是月光的你</span></div>
+        <div class="audience-pill reveal reveal-delay-1"><span class="pill-emoji">📊</span><span class="pill-text">希望控制开支的理性消费者</span></div>
+        <div class="audience-pill reveal reveal-delay-2"><span class="pill-emoji">📝</span><span class="pill-text">需要分类管理预算的细致规划者</span></div>
+        <div class="audience-pill reveal reveal-delay-1"><span class="pill-emoji">🌱</span><span class="pill-text">想养成良好消费习惯的年轻人</span></div>
+        <div class="audience-pill reveal reveal-delay-2"><span class="pill-emoji">👨‍👩‍👧‍👦</span><span class="pill-text">需要家庭财务管理的主理人</span></div>
+        <div class="audience-pill reveal reveal-delay-3"><span class="pill-emoji">💼</span><span class="pill-text">追求高效记账的职场人士</span></div>
+        <div class="audience-pill reveal reveal-delay-1"><span class="pill-emoji">🧾</span><span class="pill-text">收入不固定的自由职业者</span></div>
+        <div class="audience-pill reveal reveal-delay-2"><span class="pill-emoji">🎓</span><span class="pill-text">精打细算的在校学生</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-section">
+    <div class="section-inner">
+      <div class="cta-panel reveal">
+        <div class="section-label cta-label" id="download">立即开始</div>
+        <h2 class="cta-title">第一步，从下载开始</h2>
+        <p class="cta-copy">7 天免费体验全部 AI 功能。如果不满意，随时取消，没有任何损失。</p>
+        <a href="#download" class="btn-primary cta-button">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v5"/><path d="M16 3v4h-4"/><path d="M16 19l2 2 4-4"/></svg>
+          在 App Store 免费下载
+        </a>
+        <p class="cta-requirements">需要 iOS 18.0 或更高版本 · 约 20 MB</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="section-inner">
+      <div class="footer-inner">
+        <a href="index.html" class="footer-logo">
+          <div class="nav-logo-mark footer-logo-mark"><img src="logo.png" alt="八金" class="logo-fill rounded" /></div>
+          八金
+        </a>
+        <ul class="footer-links">
+          <li><a href="support.html">支持</a></li>
+          <li><a href="privacy.html">隐私政策</a></li>
+          <li><a href="#features">功能特色</a></li>
+        </ul>
+        <div class="footer-copy">© 2026 八金. 保留所有权利.</div>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
