@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>支持与帮助 - 八金</title>
-  <meta name="description" content="八金 iOS 记账应用支持与帮助，包含 AI 记账、订阅、备份恢复和常见问题说明。" />
+  <meta name="description" content="八金 iOS 记账应用支持与帮助，包含 AI 记账、分账预算、整体月预算、订阅、备份恢复和常见问题说明。" />
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -90,7 +90,7 @@
               <ol>
                 <li>系统默认提供了 3 个账本可立即使用</li>
                 <li>也可以点击侧边菜单中的"添加账本"创建自定义账本</li>
-                <li>设置账本名称、图标和预算（可选）</li>
+                <li>设置账本名称和图标；分账预算模式下需要设置账本预算</li>
                 <li>开始记录交易，可以选择手动输入或使用 AI 智能记账</li>
               </ol>
             </div>
@@ -99,17 +99,29 @@
 
         <div class="acc-item">
           <button class="acc-trigger">
-            <span class="acc-q">如何设置预算？</span>
+            <span class="acc-q">如何设置预算模式？</span>
             <span class="acc-icon">+</span>
           </button>
           <div class="acc-body">
             <div class="acc-content">
-              <p>为账本设置预算可以帮助您控制支出：</p>
+              <p>八金支持两种预算模式，可以在"设置" → "预算管理"中切换：</p>
+              <ul>
+                <li><strong>分账预算</strong>：每个账本分别设置月预算，适合餐饮、交通、日用等分类预算边界清晰的情况。</li>
+                <li><strong>整体预算</strong>：所有普通账本共用一个本月总预算，适合只想控制总支出、不想给每个账本单独分配额度的情况。</li>
+              </ul>
+              <p class="mt-12">分账预算模式下：</p>
               <ol>
                 <li>在账本详情页点击"编辑账本"</li>
                 <li>输入月度预算金额</li>
                 <li>保存后，应用会自动追踪您的支出</li>
                 <li>当支出接近或超过预算时，会收到提醒（需在设置中开启通知）</li>
+              </ol>
+              <p class="mt-12">整体预算模式下：</p>
+              <ol>
+                <li>进入"设置" → "预算管理"</li>
+                <li>选择"整体预算"</li>
+                <li>输入本月总预算金额</li>
+                <li>之后新增账本不需要填写预算，交易仍会归类到账本用于统计复盘</li>
               </ol>
             </div>
           </div>
@@ -233,6 +245,7 @@
                 <li>无限账本和交易记录</li>
                 <li>手动记账</li>
                 <li>预算设置和追踪</li>
+                <li>分账预算和整体月预算</li>
                 <li>统计分析图表</li>
                 <li>数据备份和恢复</li>
               </ul>
@@ -360,6 +373,23 @@
         <div class="faq-section-title">故障排查</div>
       </div>
       <div class="accordion">
+
+        <div class="acc-item">
+          <button class="acc-trigger">
+            <span class="acc-q">整体预算会影响月末结转吗？</span>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="acc-body">
+            <div class="acc-content">
+              <p>会。月末结转会按当前预算模式处理：</p>
+              <ul>
+                <li><strong>分账预算</strong>：按每个账本分别计算剩余预算或超支金额。</li>
+                <li><strong>整体预算</strong>：按本月总预算减去所有普通账本支出，只生成一条整体预算结转或整体预算超支记录。</li>
+              </ul>
+              <div class="tip-box">💡 整体预算模式下可以在"设置" → "预算管理"中开启或关闭整体预算结转。</div>
+            </div>
+          </div>
+        </div>
 
         <div class="acc-item">
           <button class="acc-trigger">
