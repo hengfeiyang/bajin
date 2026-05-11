@@ -49,6 +49,11 @@
         <div class="quick-link-title">AI 功能</div>
         <div class="quick-link-desc">智能记账和 AI 管家指南</div>
       </a>
+      <a href="#budget-carryover" class="quick-link">
+        <div class="quick-link-icon">↻</div>
+        <div class="quick-link-title">预算结余</div>
+        <div class="quick-link-desc">结余账户和预算结转说明</div>
+      </a>
       <a href="#subscription" class="quick-link">
         <div class="quick-link-icon">💳</div>
         <div class="quick-link-title">订阅管理</div>
@@ -218,6 +223,88 @@
             <div class="acc-content">
               <p>是的，使用 AI 智能记账功能需要网络连接。AI 解析需要将您输入的文本发送到 AI 服务提供商，仅发送文本内容和财务数字，不包含任何个人身份信息。</p>
               <p>如果您担心隐私，可以选择手动记账。<strong>手动记账功能完全离线</strong>，不需要网络。</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- BUDGET CARRYOVER -->
+    <div class="faq-section reveal" id="budget-carryover">
+      <div class="faq-section-header">
+        <div class="faq-section-icon yellow">↻</div>
+        <div class="faq-section-title">预算结余与结转</div>
+      </div>
+      <div class="accordion">
+
+        <div class="acc-item">
+          <button class="acc-trigger">
+            <span class="acc-q">结余是什么意思？</span>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="acc-body">
+            <div class="acc-content">
+              <p>八金里的“结余”主要是预算概念，不是普通记账软件里的银行卡余额。</p>
+              <p class="mt-12">简单说，结余 = 本月预算 - 本月实际支出。</p>
+              <ul>
+                <li>本月餐饮预算 1000 元，实际花了 820 元，剩下的 180 元就是结余。</li>
+                <li>本月餐饮预算 1000 元，实际花了 1120 元，超出的 120 元就是负结余，也就是超支。</li>
+              </ul>
+              <div class="tip-box">💡 八金专注预算管理，所以会把“有没有花超预算”放在比“记了一笔流水”更重要的位置。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-trigger">
+            <span class="acc-q">结余账户是什么意思？</span>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="acc-body">
+            <div class="acc-content">
+              <p>结余账户是八金自动创建的系统账本，用来集中记录预算复盘后的结果。</p>
+              <ul>
+                <li>它不是银行卡、现金钱包，也不是日常消费分类。</li>
+                <li>未花完的预算结转时，会作为收入进入结余账户。</li>
+                <li>预算超支时，会作为支出从结余账户扣除。</li>
+                <li>它不会参与 AI 默认账本匹配、普通消费统计和默认账本选择。</li>
+              </ul>
+              <div class="tip-box">💡 结余账户余额为正，表示过去月份累计留下了预算空间；余额为负，表示过去月份累计超支，需要后续预算慢慢补回来。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-trigger">
+            <span class="acc-q">整体预算结转是什么意思？</span>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="acc-body">
+            <div class="acc-content">
+              <p>在整体预算模式下，八金不会逐个账本计算结转，而是把所有普通账本的本月支出加起来，与月总预算比较。</p>
+              <ul>
+                <li><strong>花得少</strong>：月总预算 3000 元，本月支出 2600 元，结余账户增加 400 元。</li>
+                <li><strong>花超了</strong>：月总预算 3000 元，本月支出 3200 元，结余账户扣除 200 元。</li>
+              </ul>
+              <p class="mt-12">整体预算模式下，月末只会生成一条“整体预算结转”或“整体预算超支”记录，避免每个账本重复结算。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-trigger">
+            <span class="acc-q">只想把八金当普通记账软件用怎么办？</span>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="acc-body">
+            <div class="acc-content">
+              <p>可以。日常只使用普通账本记录收入和支出即可，结余账户可以理解为预算复盘用的系统账本。</p>
+              <ul>
+                <li>不想做预算复盘时，可以忽略结余账户。</li>
+                <li>分账预算模式下，可以在账本里关闭“允许预算结转”。</li>
+                <li>整体预算模式下，可以在“设置” → “预算管理”中关闭“整体预算结转”。</li>
+              </ul>
             </div>
           </div>
         </div>
