@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>支持与帮助 - 八金</title>
-  <meta name="description" content="八金 iOS 记账应用支持与帮助，包含 AI 记账、分账预算、整体月预算、订阅、备份恢复和常见问题说明。" />
+  <meta name="description" content="八金 3.1 iOS 记账应用支持与帮助，包含年度月份查看、消费排序、大额消费 Top 10、AI 记账、预算、订阅和备份恢复说明。" />
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -43,6 +43,11 @@
         <div class="quick-link-icon">🚀</div>
         <div class="quick-link-title">快速入门</div>
         <div class="quick-link-desc">学习如何开始使用八金</div>
+      </a>
+      <a href="#statistics" class="quick-link">
+        <div class="quick-link-icon">📊</div>
+        <div class="quick-link-title">消费统计</div>
+        <div class="quick-link-desc">年度月份、Top 10 和消费排序</div>
       </a>
       <a href="#ai-features" class="quick-link">
         <div class="quick-link-icon">✦</div>
@@ -140,10 +145,70 @@
           <div class="acc-body">
             <div class="acc-content">
               <ul>
-                <li><strong>删除交易</strong>：在交易详情页向左滑动，点击"删除"</li>
+                <li><strong>删除交易</strong>：从首页消费明细或账本明细进入交易详情，点击"删除"并确认；也可在明细列表中向左滑动删除。</li>
                 <li><strong>删除账本</strong>：在账本列表页长按账本，选择"删除账本"</li>
               </ul>
               <div class="warning-box">⚠️ 删除账本会同时删除该账本下的所有交易，请谨慎操作。</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- STATISTICS -->
+    <div class="faq-section reveal" id="statistics">
+      <div class="faq-section-header">
+        <div class="faq-section-icon green">📊</div>
+        <div class="faq-section-title">消费统计</div>
+      </div>
+      <div class="accordion">
+
+        <div class="acc-item">
+          <button class="acc-trigger">
+            <span class="acc-q">如何从年度总览查看某个月的消费？</span>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="acc-body">
+            <div class="acc-content">
+              <ol>
+                <li>打开侧边菜单，进入"统计" → "年度总览"。</li>
+                <li>切换到需要查看的年份。</li>
+                <li>点击月度详情中的月份，或点击柱状图中的对应月份，进入该年月的月度统计。</li>
+                <li>查看预算、账本分布和消费列表；返回后保留原先选择的年份。</li>
+              </ol>
+              <p class="mt-12">以上月份入口、年度 Top 10 和月度消费列表在 3.1 及以上版本提供，属于免费统计功能。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-trigger">
+            <span class="acc-q">月度消费如何排序？可以在统计中修改吗？</span>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="acc-body">
+            <div class="acc-content">
+              <p>在"月度总览"下方的"消费列表"中，可以看到当月普通账本的全部支出，包含金额、商户或说明、账本和日期时间。</p>
+              <ul>
+                <li><strong>默认按金额从高到低</strong>：快速找到当月的大额消费。</li>
+                <li><strong>切换时间排序</strong>：点击列表右上角的排序菜单，选择"时间从新到旧"。</li>
+                <li>两种排序都平铺展示消费，不按天分组。</li>
+              </ul>
+              <div class="tip-box">💡 统计中的消费记录只读，不进入详情或编辑。需要修改或删除时，请从首页消费明细或账本明细进入交易详情。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-trigger">
+            <span class="acc-q">年度大额消费 Top 10 包含哪些记录？</span>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="acc-body">
+            <div class="acc-content">
+              <p>"年度总览"中的"年度大额消费 Top 10"展示所选年份金额最高的 10 笔单笔支出，按金额从高到低排列；不足 10 笔时展示实际数量。</p>
+              <p class="mt-12">仅包含普通账本的消费支出，排除收入和结余账本记录。金额相同时按时间从新到旧排列，记录同样只读。</p>
             </div>
           </div>
         </div>
@@ -352,7 +417,7 @@
                 <li>手动记账</li>
                 <li>预算设置和追踪</li>
                 <li>分账预算和整体月预算</li>
-                <li>统计分析图表</li>
+                <li>月度消费排序、年度月份查看和大额消费 Top 10</li>
                 <li>数据备份和恢复</li>
               </ul>
               <p class="mt-12">新老未订阅用户均可获得本机共 5 次 AI 免费体验，无需购买订阅。AI 记账、消费分析与 Siri 共用次数，不限时、不按月重置。成功返回结果后计次，即使没有保存为账单也会使用一次；请求失败或输入无效不扣次。用完后仍可免费使用手动记账和上述基础功能。</p>
